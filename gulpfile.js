@@ -6,9 +6,33 @@ const concat = require('gulp-concat');
 const gutil = require('gulp-util');
 const sass = require('gulp-sass');
 const clean = require('gulp-clean');
-
+var rename = require('gulp-rename');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
+var path = require('path');
 const siteRoot = '_site';
 const cssFiles = '_css/**/*.?(s)css';
+
+gulp.task('svgstore', function () {
+    return gulp
+        .src('_includes/svg/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('_includes'));
+});
+
+
+
 
 gulp.task('css', () => {
   gulp.src(cssFiles)
@@ -52,4 +76,4 @@ gulp.task('serve', () => {
   gulp.watch(cssFiles, ['css']);
 });
 
-gulp.task('default', ['clean','css', 'jekyll', 'serve']);
+gulp.task('default', ['svgstore','clean','css', 'jekyll', 'serve']);

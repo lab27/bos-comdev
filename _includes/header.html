@@ -10,16 +10,11 @@
     </div>
     <div class="top-bar-right">
       <ul class="menu">
+      {% for link in site.data.links %}
+          <li><a href="#"><svg><use xlink:href='#{{link.icon}}'></use></svg> <Br>{{link.name}}</a></li>
+      {% endfor %}
 
-      <li><a href="#">Aktuell</a></li>
-      <li><a href="#">Projekte</a></li>
-      <li><a href="#">Orang-Utan</a></li>
-      <li><a href="#">Aktiv Werden</a></li>
-      <li><a href="#">Mediathek</a></li>
-      <li><a href="#">Über BOS</a></li>
-      <li><a href="#">PATENSCHAFTEN</a></li>
-      <li><a href="#">{% include svg/donate.svg %}SPENDEN</a></li>
-      <li><a href="#">SHOP</a></li>
+    
 
      <!--    <li><input type="search" placeholder="Search"></li>
         <li><button type="button" class="button">Search</button></li> -->

@@ -24,7 +24,10 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-svgstore": "^6.1.0",
     "gulp-util": "^3.0.7"
   }
 }
