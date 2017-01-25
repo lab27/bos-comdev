@@ -1,14 +1,14 @@
 ---
 ---
-
+@import 'settings';
 @import 'foundation';
 @include foundation-everything;
-@import 'animate';
+// @import 'animate';
 
-.callout {
-  margin: 6px;
-}
-
-body {
-	background: lemonchiffon;
+#logo-text {
+	font-size: .8rem;
+	line-height: .9rem;
+	padding-left: 12px;
+	padding-top: 30px;
+	font-weight: 500;
 }
