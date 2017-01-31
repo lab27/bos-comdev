@@ -1,23 +1,25 @@
 <header>
-  <nav class="top-bar">
-    <div class="top-bar-left">
+  <nav class="top-nav">
+    <div class="top-nav-left">
       <div  class="float-left">
-      <img src="assets/images/bos-web-logo-200.png" width="120" alt="BOS Schweiz" title="BOS Schweiz">
+      <a href="/"><img src="/assets/images/bos-web-logo-200.png" width="120" alt="BOS Schweiz" title="BOS Schweiz"></a>
       </div>
       <div id="logo-text" class="float-left">
         BORNEO <BR>ORANGUTAN <BR>SURVIVAL<BR> SCHWEIZ
       </div>
     </div>
-    <div class="top-bar-right">
+    <div class="top-nav-center">
+    <ul class="menu">
+           {% for link in site.data.biglinks %}
+              <li><a href="#"><svg><use xlink:href='#{{link.icon}}'></use></svg> <Br>{{link.name}}</a></li>
+          {% endfor %}
+          </ul>
+    </div>
+    <div class="top-nav-right">
       <ul class="menu">
-      {% for link in site.data.links %}
+      {% for link in site.data.smalllinks %}
           <li><a href="#"><svg><use xlink:href='#{{link.icon}}'></use></svg> <Br>{{link.name}}</a></li>
       {% endfor %}
-
-    
-
-     <!--    <li><input type="search" placeholder="Search"></li>
-        <li><button type="button" class="button">Search</button></li> -->
       </ul>
     </div>
   </nav>

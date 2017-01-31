@@ -9,11 +9,23 @@
 	font-size: .8rem;
 	line-height: .9rem;
 	padding-left: 12px;
-	padding-top: 30px;
+	padding-top: 19px;
 	font-weight: 500;
 }
 
-.top-bar-right 	.menu{
+.top-nav-left, .top-nav-center, .top-nav-right {
+	width: 33.33%;
+	float: left;
+	@include top-bar-container;
+}
+
+.top-nav-right {
+	.menu {
+		float: right;
+	}
+}
+
+.top-nav .menu{
 	li a{
 		text-align: center;
 	}
