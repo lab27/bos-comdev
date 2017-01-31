@@ -4,6 +4,36 @@
 @import 'foundation';
 @include foundation-everything;
 // @import 'animate';
+//fun colors
+$fun1: #e87a1f;
+$fun2: #ece4b7;
+$fun3: #d9dd92;
+$fun4: #eabe7c;
+$fun5: #311e10;
+
+$fun1: #333333;
+$fun2: #527231;
+$fun3: #648c3c;
+$fun4: #6aa53a;
+$fun5: #7abe43;
+
+
+.fancy-title {
+	position:absolute;
+	width:100%;
+	margin-top:100px;
+	text-align:center;
+
+	span {
+	width:auto;
+	background:#f9f9f9;
+	margin:0 auto;
+	padding:6px;
+	font-size:1.2rem;
+	text-transform:uppercase;
+	letter-spacing:.05rem;
+	}
+}
 
 #logo-text {
 	font-size: .8rem;
@@ -14,16 +44,15 @@
 }
 
 .top-nav-left, .top-nav-center, .top-nav-right {
+	width:100%;
+	@include breakpoint(medium){
+
 	width: 33.33%;
 	float: left;
+	}
 	@include top-bar-container;
 }
 
-.top-nav-right {
-	.menu {
-		float: right;
-	}
-}
 
 .top-nav .menu{
 	li a{
@@ -38,3 +67,62 @@
 }
 }
 
+.top-nav-right {
+	.menu {
+		float: right;
+		font-weight: 500;
+		font-size: .8rem;
+		text-transform: uppercase;
+		letter-spacing: .05rem;
+		svg {
+			width: 36px;
+			height: 36px;
+			margin-bottom: 12px;
+		}
+		li:last-child a{
+			border:1px solid #333;
+			border-radius: 3px;
+		}
+	}
+}
+
+.top-nav-center {
+	background:none;
+	ul {
+		position: absolute;
+		top:18px;
+		background:none;
+		margin-left: -4%;
+	}
+	li {
+		width: 30%;
+		background:none;
+		a{
+
+		margin:3px;
+		box-shadow:0 2px 3px rgba(0,0,0,.2);
+		border-radius:3px;
+
+		}
+
+		svg {
+			margin-bottom: 12px;
+		}
+	}
+	li:first-child a {
+		background: $fun2;
+				padding: 21px;
+
+	}
+		li:nth-child(2) a {
+		background: $fun3;
+				padding: 21px;
+
+	}
+		li:last-child a {
+		background: $fun4;
+				padding: 21px;
+
+	}
+
+}
