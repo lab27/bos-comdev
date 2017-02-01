@@ -4,26 +4,20 @@
 @import "settings";
 @import "foundation";
 @import "buttons";
-@import "piechart";
+// @import "zig-zag";
+// @import "piechart";
 
 @include foundation-everything;
 
 // @import 'animate';
-//fun colors
-$fun1: #e87a1f;
-$fun2: #ece4b7;
-$fun3: #d9dd92;
-$fun4: #eabe7c;
-$fun5: #311e10;
 
-$fun1: #333333;
-$fun2: #527231;
-$fun3: #648c3c;
-$fun4: #6aa53a;
-$fun5: #7abe43;
 
 $pale-green: #cae9bf;
 $red-orange: #ff5035;
+
+.space-left {
+    margin-left: 12px;
+}
 
 .titleblock {
 	margin-bottom: 96px;
@@ -31,7 +25,10 @@ $red-orange: #ff5035;
     .top-image {
         transition: .2s all;
         clip-path: none;
-  
+        // -webkit-clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
+        // clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
+        // clip-path: polygon(-4.0000000000% 71.9300000000%, 0.6500000000% 74.0700000000%, 5.3000000000% 71.9300000000%, 10.0000000000% 74.0700000000%, 14.6500000000% 71.9300000000%, 19.3000000000% 74.0700000000%, 23.9500000000% 71.9300000000%, 28.6000000000% 74.0700000000%, 33.2500000000% 71.9300000000%, 37.9000000000% 74.0700000000%, 42.5500000000% 71.9300000000%, 47.2000000000% 74.0700000000%, 51.8500000000% 71.9300000000%, 56.5000000000% 74.0700000000%, 61.1500000000% 71.9300000000%, 65.8000000000% 74.0700000000%, 70.4500000000% 71.9300000000%, 75.1000000000% 74.0700000000%, 79.7500000000% 71.9300000000%, 84.4000000000% 74.0700000000%, 89.0000000000% 71.9300000000%, 93.6600000000% 74.0700000000%, 98.3200000000% 71.9300000000%, 102.9800000000% 74.0700000000%, 102.9800000000% 3.0700000000%, 98.3200000000% 0.9300000000%, 93.6800000000% 3.0700000000%, 89.0000000000% 0.9300000000%, 84.3700000000% 3.0700000000%, 79.7200000000% 0.9300000000%, 75.0700000000% 3.0700000000%, 70.4100000000% 0.9300000000%, 65.7600000000% 3.0700000000%, 61.1100000000% 0.9300000000%, 56.4600000000% 3.0700000000%, 51.8100000000% 0.9300000000%, 47.1600000000% 3.0700000000%, 42.5100000000% 0.9300000000%, 37.8600000000% 3.0700000000%, 33.2000000000% 0.9300000000%, 28.5500000000% 3.0700000000%, 23.9000000000% 0.9300000000%, 19.2500000000% 3.0700000000%, 14.6000000000% 0.9300000000%, 10.0000000000% 3.0700000000%, 5.3000000000% 0.9300000000%, 0.6500000000% 3.0700000000%, -4.0000000000% 0.9300000000%);
+        transition: .5s all;
 
         @include breakpoint(medium) {
             // margin-left: 10%;
@@ -40,28 +37,34 @@ $red-orange: #ff5035;
             margin-left: 10%;
             // clip-path: polygon(10% 0%, 60% 0%, 60% 100%, 10% 100%);
         }
+        &:hover {
+            // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+        }
     }
 
     h1 {
+        font-size: 10vw;
+        line-height: 9vw;
 
     	position: absolute;
-    	// background: cornflowerblue;
-    	// color: white;
+
     	margin-top: -60px;
     	margin-left: 12px;
-    	font-size: 5rem;
-    	// text-transform: uppercase;
+    	
+
     	letter-spacing: .1rem;
-    	line-height: 4rem;
     	color: rgb(79, 16,21);
     	color: $red-orange;
     	color: #333;
     	z-index: 1;
-    	// padding: 6px 12px;
     	font-family: 'Barrio', cursive;
+        @include breakpoint(medium){
+            font-size: 4rem;
+            line-height: 4rem;
+        }
     }
 
-    p.lead {
+    h3 {
     	margin-left: 24px;
     	margin-top: -24px;
     	margin-right: 24px;
@@ -76,9 +79,10 @@ $red-orange: #ff5035;
 
     	span {
     	  background: $pale-green;
-    	  background: #eee;
+    	  background: $fun5;
     	  font-weight: 500;
     	  font-size: 1.6rem;
+
   padding: 8px 12px;
   line-height: 2.6rem;
   box-decoration-break: clone;
@@ -89,7 +93,7 @@ $red-orange: #ff5035;
     }
 }
 
-h1, h2, h3 {
+h1, h2 {
 	font-family: 'Barrio', cursive;
 }
 
@@ -111,6 +115,12 @@ h1, h2, h3 {
 }
 .section-content {
 
+    h4 {
+        font-weight: 500;
+        text-transform:uppercase;
+        letter-spacing: .08rem;
+    }
+
 @include grid-column(12);
 	@include breakpoint(medium) {
 
@@ -128,6 +138,15 @@ h1, h2, h3 {
 	p.lead, img {
 		margin-bottom: 24px;
 	}
+
+    .graphic {
+        margin: 48px 0;
+        img {
+        // -webkit-clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
+        // clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
+  
+        }
+    }
 }
 
 
@@ -139,11 +158,11 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
-.top-nav-left, .top-nav-center, .top-nav-right {
-    width: 100%;
-
+.top-nav-left, .top-nav-center, .top-nav-right, .mobile-menu-button {
+    @include grid-column(6);
+    @include grid-column-collapse;
     @include breakpoint(medium) {
-        width: 33.33%;
+        @include grid-column(4);
         float: left;
     }
 
@@ -151,16 +170,28 @@ h1, h2, h3 {
     @include top-bar-container;
 }
 
+.mobile-menu-button {
+    float: right;
+    text-align: right;
+    .menu li {
+        float:right;
+        svg {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
 .top-nav .menu {
     li a {
         text-align: center;
     }
 
-    svg {
-        width: 48px;
-        height: 48px;
-        fill: currentColor;
-    }
+    // svg {
+    //     width: 48px;
+    //     height: 48px;
+    //     fill: currentColor;
+    // }
 }
 
 .top-nav-right {
@@ -178,16 +209,28 @@ h1, h2, h3 {
         }
 
         li:last-child a {
-            border: 1px solid #333;
-            border-radius: 3px;
+            background: rgba($fun5,.5);
+            margin-left: 12px;
+
+            &:hover {
+                background: rgba($fun5, 1);
+            }
         }
     }
+   
 }
 
 .top-nav-center {
     background: none;
+    @include grid-column(12);
+    @include grid-column-collapse;
+    text-align:center;
+    padding:12px;
 
-    text-align:center
+    @include breakpoint(medium){
+        @include grid-column(4);
+    }
+
     ul {
         // position: absolute;
         top: 18px;
@@ -198,7 +241,6 @@ h1, h2, h3 {
     }
 
     li {
-        width: 30%;
         background: none;
 
         a {
@@ -206,33 +248,38 @@ h1, h2, h3 {
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
             // border-radius:3px;
-            width: 95%;
+            // width: 95%;
             background: #f9f9f9;
             transition: .2s all;
+            font-size: 3vw;
+            padding: 18px 6px;
 
             &:hover {
                 margin-top: -10px;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
             }
-        }
 
-        svg {
+            svg {
+            width: 24px;
+            height: 24px ;
             margin-bottom: 12px;
         }
+
+        @include breakpoint(medium) {
+            font-size: 1.2rem;
+            svg {
+                width: 48px;
+                height: 48px;
+            }
+        }
+        }
+
+        
     }
 
-    li:first-child a {
-        // background: $fun2;
-        padding: 21px;
+    li:first-child a, li:nth-child(2) a, li:last-child a {
+        padding: 16px 6px;
     }
 
-    li:nth-child(2) a {
-        // background: $fun3;
-        padding: 21px;
-    }
-
-    li:last-child a {
-        // background: $fun4;
-        padding: 21px;
-    }
+   
 }

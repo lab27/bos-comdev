@@ -41,13 +41,26 @@
 
 @import "util/util";
 
+//fun colors
+$fun1: #e87a1f;
+$fun2: #ece4b7;
+$fun3: #d9dd92;
+$fun4: #eabe7c;
+$fun5: #311e10;
+
+$fun1: #333333;
+$fun2: #527231;
+$fun3: #648c3c;
+$fun4: #6aa53a;
+$fun5: #7abe43;
+
 // 1. Global
 // ---------
 
 $global-width: rem-calc(1200);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
-$primary-color: #2199e8;
+$primary-color: $fun2;
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
