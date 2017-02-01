@@ -374,6 +374,15 @@ body.is-reveal-open {
     color: #fff; }
   .bos-button, .bos-button:hover, .bos-button:focus {
     background: transparent; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .bos-button {
+      padding: 12px;
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+      .bos-button.space-left {
+        margin: 0; } }
   .bos-button svg {
     fill: currentColor;
     width: 36px;
@@ -3255,12 +3264,48 @@ table.hover tr:nth-of-type(even):hover {
 
   .top-bar-right {
     float: right; } }
+.menu-col {
+  width: 100%;
+  float: left;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem; }
+  .menu-col:last-child:not(:first-child) {
+    float: right; }
+  @media screen and (min-width: 40em) {
+    .menu-col {
+      width: 33.33333%;
+      float: left;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; }
+      .menu-col:last-child:not(:first-child) {
+        float: right; } }
+  @media screen and (min-width: 64em) {
+    .menu-col {
+      width: 16.66667%;
+      float: left;
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; }
+      .menu-col:last-child:not(:first-child) {
+        float: right; } }
+  .menu-col ul.menu {
+    margin-bottom: 24px; }
+  .menu-col li {
+    line-height: 1;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0; }
+  .menu-col li.cat {
+    font-weight: 700; }
+
 .space-left {
   margin-left: 12px; }
 
 .titleblock {
   margin-bottom: 96px;
   margin-top: 120px; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .titleblock {
+      margin-top: 60px; } }
   .titleblock .top-image {
     transition: .2s all;
     clip-path: none;
@@ -3273,17 +3318,22 @@ table.hover tr:nth-of-type(even):hover {
   .titleblock h1 {
     font-size: 10vw;
     line-height: 9vw;
-    position: absolute;
-    margin-top: -60px;
-    margin-left: 12px;
+    position: relative;
+    margin: 0;
+    margin-bottom: -24px;
     letter-spacing: .1rem;
     color: #4f1015;
     color: #ff5035;
     color: #333;
     z-index: 1;
-    font-family: 'Barrio', cursive; }
+    font-family: 'Barrio', cursive;
+    text-align: center; }
     @media screen and (min-width: 40em) {
       .titleblock h1 {
+        position: absolute;
+        margin-top: -60px;
+        margin-left: 12px;
+        text-align: left;
         font-size: 4rem;
         line-height: 4rem; } }
   .titleblock h3 {
@@ -3439,8 +3489,9 @@ h1, h2 {
     height: 36px;
     margin-bottom: 12px; }
   .top-nav-right .menu li:last-child a {
-    background: rgba(122, 190, 67, 0.5);
-    margin-left: 12px; }
+    background: #f9f9f9;
+    margin-left: 12px;
+    transition: .2s all; }
     .top-nav-right .menu li:last-child a:hover {
       background: #7abe43; }
 
@@ -3491,3 +3542,41 @@ h1, h2 {
             height: 48px; } }
   .top-nav-center li:first-child a, .top-nav-center li:nth-child(2) a, .top-nav-center li:last-child a {
     padding: 16px 6px; }
+
+#helpbar {
+  margin: 0;
+  padding: 24px;
+  background: #eee;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  min-height: 100vh;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  padding-top: 60px;
+  text-align: center; }
+  #helpbar #helptext {
+    margin: 0 auto;
+    text-align: left;
+    color: #333; }
+    #helpbar #helptext p {
+      color: #333; }
+
+#close-help, #close-advice {
+  width: 44px;
+  height: 44px;
+  background: white;
+  font-size: 44px;
+  border-radius: 22px;
+  box-shadow: 0 1px 2px rgba(18, 18, 20, 0.3);
+  font-weight: 200;
+  padding: 0;
+  position: fixed;
+  right: 24px;
+  top: 24px; }
+  #close-help span, #close-advice span {
+    margin-top: -6px;
+    display: block;
+    margin-left: 2px;
+    font-size: 50px; }

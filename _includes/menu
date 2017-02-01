@@ -1,0 +1,67 @@
+#helpbar.row.expanded.clearfix(style="visibility:hidden;opacity:0;")
+  #helptext.row.expanded
+    .menu-col
+      ul.menu.vertical
+        li.cat Aktuell
+        li Neue Babyhäuser
+        li Neues Zuhause für Malaienbären
+        li Kein Regenwald auf meinem Teller
+        li Nachrichten
+        li Das sagen Sie über BOS
+    .menu-col
+      ul.menu.vertical
+        li.cat Projekte
+        li Bauprojekte
+        li Salat Island
+        li Wiederaufforstung
+        li Kampagnen
+        li Auswilderung
+        li Regenwald
+        li BOS-Rettungsstationen
+    .menu-col
+      ul.menu.vertical
+        li.cat Orang-Utan
+        li Wissenswertes
+        li Auswilderung
+        li Orang-Utans in Gefahr
+        li Plüschis ab in die Freiheit
+    .menu-col
+      ul.menu.vertical
+        li.cat Aktiv Werden
+        li Hilfpakete schnüren
+        li Bäume pflanzen in Samboja
+        li Herzensangelegenheit
+        li Orang-Utan-Patenschaft
+        li Fördermitglied
+        li Spenden
+        li Testamentspenden
+        li Shop
+        li Volontariat Vorort
+        li Petitionen
+        li Freiwilligenarbeit
+        li Das sagen Sie über BOS
+        li Plüschis ab in die Freiheit
+    .menu-col
+      ul.menu.vertical
+        li.cat Mediathek
+        li Zum Lesen
+        li Für Ihre Ohren 
+        li Für Ihre Augen
+        li In den Medien
+        li Für die Medien
+        li Nachrichtenarchiv
+    .menu-col
+      ul.menu.vertical
+        li.cat Über BOS
+        li Überblick und Vereinszweck
+        li Unser Vorstand
+        li Unser Team in der Geschäftsstelle
+        li BOS Freunde
+        li BOS Stiftung (BOSF)
+        li Die BOS Familie weltweit
+        li Die BOS Familie weltweit
+        li Samboja Lodge
+        li Kontakt/Impressum
+        li Das sagen Sie über BOS
+  button#close-help
+    span ×
