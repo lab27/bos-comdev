@@ -20,7 +20,7 @@ $main-button-color: $fun5;
         @include button-expand;
 
         &.space-left {
-            margin: 0;
+            margin-left: 0;
         }
     }
 

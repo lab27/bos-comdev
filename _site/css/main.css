@@ -382,7 +382,7 @@ body.is-reveal-open {
       margin-left: 0;
       margin-right: 0; }
       .bos-button.space-left {
-        margin: 0; } }
+        margin-left: 0; } }
   .bos-button svg {
     fill: currentColor;
     width: 36px;
@@ -3305,7 +3305,7 @@ table.hover tr:nth-of-type(even):hover {
   margin-top: 120px; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .titleblock {
-      margin-top: 60px; } }
+      margin-top: 24px; } }
   .titleblock .top-image {
     transition: .2s all;
     clip-path: none;
@@ -3355,6 +3355,10 @@ table.hover tr:nth-of-type(even):hover {
       line-height: 2.6rem;
       box-decoration-break: clone;
       -webkit-box-decoration-break: clone; }
+      @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+        .titleblock h3 span {
+          font-size: 1.2rem;
+          line-height: 2rem; } }
 
 h1, h2 {
   font-family: 'Barrio', cursive; }
@@ -3374,6 +3378,10 @@ h1, h2 {
     display: table; }
   .section::after {
     clear: both; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .section {
+      padding: 12px 0;
+      margin-bottom: 24px; } }
 
 .section-title {
   width: 100%;
@@ -3395,7 +3403,7 @@ h1, h2 {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem; }
   .section-content h4 {
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .08rem; }
   .section-content:last-child:not(:first-child) {
@@ -3426,6 +3434,9 @@ h1, h2 {
     margin-bottom: 24px; }
   .section-content .graphic {
     margin: 48px 0; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .section-content .graphic {
+        margin: 12px 0; } }
 
 #logo-text {
   font-size: .8rem;
