@@ -1,3 +1,22 @@
+var fonts = [
+	'Barrio',
+	'Bahiana',
+	'Fjalla One',
+	'Arvo',
+	'Anton',
+	'Abril Fatface']
+
+var fontCounter = 0;
+
+$('h1, .section h2').css('font-family',fonts[fontCounter]).on('click',function(){
+	if(fontCounter == fonts.length){
+		fontCounter = 0;
+	} else {
+
+	fontCounter ++
+	}
+	$('h1, .section h2').css('font-family',fonts[fontCounter])
+});
 
 
 
