@@ -3264,6 +3264,12 @@ table.hover tr:nth-of-type(even):hover {
 
   .top-bar-right {
     float: right; } }
+body {
+  background: #fff5e6; }
+
+header {
+  background: white; }
+
 .menu-col {
   width: 100%;
   float: left;
@@ -3300,53 +3306,34 @@ table.hover tr:nth-of-type(even):hover {
 .space-left {
   margin-left: 12px; }
 
-.titleblock {
+#titleblock {
   margin-bottom: 96px;
-  margin-top: 120px; }
+  margin-top: 60px; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-    .titleblock {
+    #titleblock {
       margin-top: 24px; } }
-  .titleblock .top-image {
+  #titleblock .top-image {
     transition: .2s all;
     clip-path: none;
     transition: .5s all; }
     @media screen and (min-width: 40em) {
-      .titleblock .top-image {
+      #titleblock .top-image {
         margin-top: 28px;
         width: 50%;
         margin-left: 25%; } }
-  .titleblock h1 {
-    font-size: 10vw;
-    line-height: 9vw;
-    position: relative;
-    margin: 0;
-    margin-bottom: -24px;
-    letter-spacing: .1rem;
-    color: #4f1015;
-    color: #ff5035;
-    color: #333;
-    z-index: 1;
-    font-family: 'Barrio', cursive;
-    text-align: center; }
-    @media screen and (min-width: 40em) {
-      .titleblock h1 {
-        position: absolute;
-        margin-top: -60px;
-        margin-left: 12px;
-        text-align: left;
-        font-size: 4rem;
-        line-height: 4rem; } }
-  .titleblock h3 {
+  #titleblock h1 {
+    font-size: 4rem; }
+  #titleblock h3 {
     margin-left: 24px;
     margin-top: -24px;
     margin-right: 24px; }
     @media screen and (min-width: 64em) {
-      .titleblock h3 {
+      #titleblock h3 {
         max-width: 600px;
         position: absolute;
-        margin-left: 550px;
-        margin-top: -100px; } }
-    .titleblock h3 span {
+        bottom: 0;
+        right: 0; } }
+    #titleblock h3 span {
       background: #cae9bf;
       background: #7abe43;
       font-weight: 500;
@@ -3356,9 +3343,12 @@ table.hover tr:nth-of-type(even):hover {
       box-decoration-break: clone;
       -webkit-box-decoration-break: clone; }
       @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-        .titleblock h3 span {
+        #titleblock h3 span {
           font-size: 1.2rem;
           line-height: 2rem; } }
+
+h1, h2 {
+  font-family: 'Barrio', cursive; }
 
 .section {
   max-width: 75rem;
@@ -3380,8 +3370,6 @@ table.hover tr:nth-of-type(even):hover {
     .section {
       padding: 12px 0;
       margin-bottom: 24px; } }
-  .section:nth-child(even) {
-    background: #fff5e6; }
 
 .section-title {
   width: 100%;
@@ -3515,7 +3503,8 @@ table.hover tr:nth-of-type(even):hover {
   padding-left: 0;
   padding-right: 0;
   text-align: center;
-  padding: 12px; }
+  padding: 12px;
+  margin-bottom: -20px; }
   .top-nav-center:last-child:not(:first-child) {
     float: right; }
   @media screen and (min-width: 40em) {
