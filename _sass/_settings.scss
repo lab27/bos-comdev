@@ -54,6 +54,14 @@ $fun3: #648c3c;
 $fun4: #6aa53a;
 $fun5: #7abe43;
 
+$earthy1: #EAE6CA;
+$earthy2: #E6D690;
+$earthy3: #E1CC4F;
+$earthy4: #6A5D4D;
+$earthy5: #293133;
+$earthy6: #826C34;
+$earthy7: #57A639;
+
 // 1. Global
 // ---------
 
@@ -526,5 +534,5 @@ $tooltip-radius: $global-radius;
 
 $topbar-padding: 1rem;
 $topbar-background: #fff;
-$topbar-link-color: #333;
+$topbar-link-color: $earthy5;
 $topbar-input-width: 200px;

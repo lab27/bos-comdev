@@ -1,22 +1,38 @@
-// var fonts = [
-// 	'Barrio',
-// 	'Bahiana',
-// 	'Fjalla One',
-// 	'Arvo',
-// 	'Anton',
-// 	'Abril Fatface']
+$('.js-scroll-to').click(function(e) {
 
-// var fontCounter = 0;
+	target = $($(this).attr('href'));
 
-// $('h1, .section h2').css('font-family',fonts[fontCounter]).on('click',function(){
-// 	if(fontCounter == fonts.length){
-// 		fontCounter = 0;
-// 	} else {
+	if (target.offset()) {
+		$('html, body').animate({scrollTop: target.offset().top + 'px'}, 600);
+	}
 
-// 	fontCounter ++
-// 	}
-// 	$('h1, .section h2').css('font-family',fonts[fontCounter])
-// });
+	e.preventDefault();
+});
+
+
+
+$('.js-next').click(function(e) {
+	console.log("click down");
+  var selected = $(".section.js-current-panel");
+  var anchors = $(".section");
+
+  var pos = anchors.index(selected);
+  var next = anchors.get(pos+1);
+  var prev = anchors.get(pos-1);
+
+  target = $(next);
+
+  $(selected).removeClass("js-current-panel");
+  $(next).addClass("js-current-panel");
+
+	if (target.offset()) {
+		$('html, body').animate({scrollTop: target.offset().top + 'px'}, 600);
+	}
+
+
+	e.preventDefault();
+});
+
 
 
 

@@ -1,4 +1,4 @@
-$main-button-color: $fun5;
+$main-button-color: $earthy7;
 
 .bos-button {
     @include button-style;
@@ -34,6 +34,8 @@ $main-button-color: $fun5;
 
     &:hover {
         background: $main-button-color;
+        // background: $earthy3;
+        // border-color: $earthy3;
     }
 
     &.info {

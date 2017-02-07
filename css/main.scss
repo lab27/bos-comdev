@@ -4,15 +4,53 @@
 @import "settings";
 @import "foundation";
 @import "buttons";
-// @import "zig-zag";
-// @import "piechart";
+/* @import "zig-zag";*/
+/* @import "piechart";*/
 
 @include foundation-everything;
 
-// @import 'animate';
+
+@-webkit-keyframes slowbounce {
+  0%   { bottom: 24px; }
+  50%   { bottom: 36px; }
+  100% { bottom: 24px; }
+}
+
+
+@keyframes slowbounce {
+  0%   { bottom: 24px; }
+  50%   { bottom: 36px; }
+  100% { bottom: 24px; }
+}
+/* @import 'animate';*/
+.js-next {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 100;
+  color: $earthy4;
+  cursor: pointer;
+  transition: 1s bottom;
+  -webkit-animation: slowbounce 2s infinite ease;
+          animation: slowbounce 2s infinite ease;
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+  &:hover {
+    color: $earthy7;
+    // animation: none;
+  }
+}
+svg {
+  fill: currentColor;
+}
 
 body {
-        background: #fff5e6;
+        background: $earthy1;
+        color: $earthy5;
 }
 header {
     background: white;
@@ -32,14 +70,14 @@ header {
     li {
         line-height: 1;
         margin-bottom: 12px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid $earthy5;
         padding: 6px 0;
     }
     li.cat {
         font-weight: 700;
     }
 }
-$pale-green: #cae9bf;
+$pale-green: #E1CC4F;
 $red-orange: #ff5035;
 
 .space-left {
@@ -48,61 +86,22 @@ $red-orange: #ff5035;
 
 #titleblock {
 	margin-bottom: 96px;
-	margin-top: 60px;
+	margin-top: 24px;
     @include breakpoint(small only) {
         margin-top: 24px;
     }
-    .top-image {
-        transition: .2s all;
-        clip-path: none;
-        // -webkit-clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
-        // clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
-        // clip-path: polygon(-4.0000000000% 71.9300000000%, 0.6500000000% 74.0700000000%, 5.3000000000% 71.9300000000%, 10.0000000000% 74.0700000000%, 14.6500000000% 71.9300000000%, 19.3000000000% 74.0700000000%, 23.9500000000% 71.9300000000%, 28.6000000000% 74.0700000000%, 33.2500000000% 71.9300000000%, 37.9000000000% 74.0700000000%, 42.5500000000% 71.9300000000%, 47.2000000000% 74.0700000000%, 51.8500000000% 71.9300000000%, 56.5000000000% 74.0700000000%, 61.1500000000% 71.9300000000%, 65.8000000000% 74.0700000000%, 70.4500000000% 71.9300000000%, 75.1000000000% 74.0700000000%, 79.7500000000% 71.9300000000%, 84.4000000000% 74.0700000000%, 89.0000000000% 71.9300000000%, 93.6600000000% 74.0700000000%, 98.3200000000% 71.9300000000%, 102.9800000000% 74.0700000000%, 102.9800000000% 3.0700000000%, 98.3200000000% 0.9300000000%, 93.6800000000% 3.0700000000%, 89.0000000000% 0.9300000000%, 84.3700000000% 3.0700000000%, 79.7200000000% 0.9300000000%, 75.0700000000% 3.0700000000%, 70.4100000000% 0.9300000000%, 65.7600000000% 3.0700000000%, 61.1100000000% 0.9300000000%, 56.4600000000% 3.0700000000%, 51.8100000000% 0.9300000000%, 47.1600000000% 3.0700000000%, 42.5100000000% 0.9300000000%, 37.8600000000% 3.0700000000%, 33.2000000000% 0.9300000000%, 28.5500000000% 3.0700000000%, 23.9000000000% 0.9300000000%, 19.2500000000% 3.0700000000%, 14.6000000000% 0.9300000000%, 10.0000000000% 3.0700000000%, 5.3000000000% 0.9300000000%, 0.6500000000% 3.0700000000%, -4.0000000000% 0.9300000000%);
-        transition: .5s all;
-
-        @include breakpoint(medium) {
-            // margin-left: 10%;
-            margin-top: 28px;
-            width: 50%;
-            margin-left: 25%;
-            // clip-path: polygon(10% 0%, 60% 0%, 60% 100%, 10% 100%);
-        }
-        &:hover {
-            // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
-        }
-    }
-    
+img {
+  margin-top: -48px;
+}
 
 
 
-    // h1 {
-    //     font-size: 10vw;
-    //     line-height: 9vw;
-
-    // 	position: relative;
-
-        
-    //     margin:0;
-    // 	margin-bottom: -24px;
-    // 	letter-spacing: .1rem;
-    // 	color: rgb(79, 16,21);
-    // 	color: $red-orange;
-    // 	color: #333;
-    // 	z-index: 1;
-    // 	font-family: 'Barrio', cursive;
-    //     text-align: center;
-    //     @include breakpoint(medium){
-    //         position:absolute;
-    //         margin-top: -60px;
-    //     margin-left: 12px;
-    //         text-align: left;
-    //         font-size: 4rem;
-    //         line-height: 4rem;
-    //     }
-    // }
 
     h1 {
         font-size: 4rem;
+        z-index: 10;
+        position: relative;
+
     }
     h3 {
     	margin-left: 24px;
@@ -113,15 +112,15 @@ $red-orange: #ff5035;
     	max-width: 600px;
 
     	position:absolute;
-    	// margin-left: 550px;
-    	// margin-top: -100px;
+    	/* margin-left: 550px;*/
+    	/* margin-top: -100px;*/
         bottom: 0;
         right: 0;
 		}
 
     	span {
-    	  background: $pale-green;
-    	  background: $fun5;
+    	  background: $earthy7;
+    	  /* background: $fun5;*/
     	  font-weight: 500;
     	  font-size: 1.6rem;
 
@@ -129,7 +128,7 @@ $red-orange: #ff5035;
   line-height: 2.6rem;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  // box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  /* box-shadow: 0 10px 20px rgba(0,0,0,.2);*/
 
    @include breakpoint(small only) {
             font-size: 1.2rem;
@@ -156,7 +155,7 @@ h1, h2 {
         padding: 12px 0;
         margin-bottom: 24px;
     }
- 
+
 }
 .section-title {
 	@include grid-column(12);
@@ -200,9 +199,9 @@ h1, h2 {
             margin: 12px 0;
         }
         img {
-        // -webkit-clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
-        // clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);
-  
+        /* -webkit-clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);*/
+        /* clip-path: polygon(0% 0%, 0 98%, 4% 96%, 7% 98%, 12% 95%, 15% 98%, 19% 95%, 24% 98%, 29% 95%, 34% 98%, 37% 95%, 41% 98%, 45% 95%, 48% 98%, 52% 95%, 55% 98%, 60% 95%, 63% 98%, 68% 95%, 72% 98%, 77% 94%, 82% 98%, 86% 94%, 90% 98%, 93% 94%, 95% 98%, 98% 95%, 100% 99%, 100% 0%, 98% 3%, 95% 0%, 92% 3%, 89% 0%, 86% 3%, 83% 1%, 79% 4%, 75% 1%, 71% 5%, 67% 2%, 63% 4%, 59% 1%, 55% 4%, 52% 1%, 49% 5%, 44% 1%, 41% 5%, 37% 1%, 34% 5%, 31% 1%, 27% 5%, 23% 2%, 20% 4%, 17% 1%, 13% 4%, 10% 1%, 5% 4%);*/
+
         }
     }
 }
@@ -245,11 +244,11 @@ h1, h2 {
         text-align: center;
     }
 
-    // svg {
-    //     width: 48px;
-    //     height: 48px;
-    //     fill: currentColor;
-    // }
+    /* svg {*/
+    /*     width: 48px;*/
+    /*     height: 48px;*/
+    /*     fill: currentColor;*/
+    /* }*/
 }
 
 .top-nav-right {
@@ -267,15 +266,16 @@ h1, h2 {
         }
 
         li:last-child a {
-            background: #f9f9f9;
+            background: #earthy1;
             margin-left: 12px;
+            -webkit-transition: .2s all;
             transition: .2s all;
             &:hover {
                 background: rgba($fun5, 1);
             }
         }
     }
-   
+
 }
 
 .top-nav-center {
@@ -291,12 +291,12 @@ h1, h2 {
     }
 
     ul {
-        // position: absolute;
+        /* position: absolute;*/
         top: 18px;
         background: none;
 
-        // margin-left: -4%;
-   
+        /* margin-left: -4%;*/
+
     }
 
     li {
@@ -306,9 +306,10 @@ h1, h2 {
             margin: 3px;
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
-            // border-radius:3px;
-            // width: 95%;
-            background: #f9f9f9;
+            /* border-radius:3px;*/
+            /* width: 95%;*/
+            background: $earthy2;
+            -webkit-transition: .2s all;
             transition: .2s all;
             font-size: 3vw;
             padding: 18px 6px;
@@ -333,14 +334,14 @@ h1, h2 {
         }
         }
 
-        
+
     }
 
     li:first-child a, li:nth-child(2) a, li:last-child a {
         padding: 16px 6px;
     }
 
-   
+
 }
 
 
@@ -359,13 +360,13 @@ h1, h2 {
     text-align: center;
 
     #helptext {
-        // max-width: 45em;
+        /* max-width: 45em;*/
         margin: 0 auto;
         text-align: left;
-        color: #333;
+        color: $earthy5;
 
         p {
-            color: #333;
+            color: $earthy5;
         }
     }
 }
