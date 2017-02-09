@@ -3307,6 +3307,23 @@ body {
   background: #EAE6CA;
   color: #293133; }
 
+.svg {
+  background: none; }
+  .svg.dark svg {
+    fill: rgba(190, 189, 127, 0.3); }
+  .svg.light {
+    background: rgba(190, 189, 127, 0.3); }
+    .svg.light svg {
+      fill: #EAE6CA; }
+
+#leaves {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  right: -1px;
+  z-index: -1;
+  fill: rgba(190, 189, 127, 0.3); }
+
 header {
   background: none; }
 
@@ -3348,16 +3365,19 @@ header {
 
 #titleblock {
   margin-bottom: 96px;
-  margin-top: 24px; }
+  margin-top: 48px; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     #titleblock {
       margin-top: 24px; } }
   #titleblock img {
     margin-top: -48px; }
   #titleblock h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     z-index: 10;
     position: relative; }
+    @media screen and (min-width: 40em) {
+      #titleblock h1 {
+        font-size: 5rem; } }
   #titleblock h3 {
     margin-left: 24px;
     margin-top: -24px;
@@ -3368,8 +3388,8 @@ header {
         position: absolute;
         /* margin-left: 550px;*/
         /* margin-top: -100px;*/
-        bottom: 0;
-        right: 0; } }
+        bottom: 24px;
+        right: 24px; } }
     #titleblock h3 span {
       background: #89AC76;
       /* background: $fun5;*/
@@ -3384,6 +3404,16 @@ header {
         #titleblock h3 span {
           font-size: 1.2rem;
           line-height: 2rem; } }
+      @media screen and (min-width: 90em) {
+        #titleblock h3 span {
+          font-size: 2rem;
+          line-height: 2.1rem; } }
+    @media screen and (max-aspect-ratio: 4 / 3) {
+      #titleblock h3 {
+        bottom: 25%; } }
+    @media screen and (orientation: portrait) {
+      #titleblock h3 {
+        bottom: 35%; } }
 
 h1, h2 {
   font-family: 'Barrio', cursive;
@@ -3409,6 +3439,8 @@ h1, h2 {
     .section {
       padding: 12px 0;
       margin-bottom: 24px; } }
+  .section.dark {
+    background: rgba(190, 189, 127, 0.3); }
 
 .section-title {
   width: 100%;
@@ -3511,7 +3543,9 @@ h1, h2 {
 
 .mobile-menu-button {
   float: right;
-  text-align: right; }
+  text-align: right;
+  background-color: none;
+  background: none; }
   .mobile-menu-button .menu li {
     float: right; }
     .mobile-menu-button .menu li svg {
