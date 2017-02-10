@@ -3315,16 +3315,20 @@ svg {
 body {
   background: #EAE6CA;
   color: #293133;
-  color: #58464c; }
+  color: #58464c;
+  background: #fbf9f0; }
 
 .svg {
   background: none; }
   .svg.dark svg {
-    fill: rgba(190, 189, 127, 0.3); }
+    fill: rgba(190, 189, 127, 0.3);
+    fill: rgba(234, 230, 202, 0.5); }
   .svg.light {
-    background: rgba(190, 189, 127, 0.3); }
+    background: rgba(190, 189, 127, 0.3);
+    background: rgba(234, 230, 202, 0.5); }
     .svg.light svg {
-      fill: #EAE6CA; }
+      fill: #EAE6CA;
+      fill: #fbf9f0; }
 
 #leaves {
   position: absolute;
@@ -3332,7 +3336,8 @@ body {
   left: -1px;
   right: -1px;
   z-index: -1;
-  fill: rgba(190, 189, 127, 0.2); }
+  fill: rgba(190, 189, 127, 0.2);
+  fill: rgba(234, 230, 202, 0.5); }
 
 header {
   background: none; }
@@ -3475,7 +3480,7 @@ h1 {
       padding: 12px 0;
       margin-bottom: 24px; } }
   .section.dark {
-    background: rgba(190, 189, 127, 0.3); }
+    background: rgba(234, 230, 202, 0.5); }
 
 .section-title {
   width: 100%;
