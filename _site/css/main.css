@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* greens & orange */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -3300,12 +3301,21 @@ table.hover tr:nth-of-type(even):hover {
   .js-next:hover {
     color: #89AC76; }
 
+#font-name {
+  position: fixed;
+  top: 12px;
+  right: 250px; }
+  #font-name h3 {
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+
 svg {
   fill: currentColor; }
 
 body {
   background: #EAE6CA;
-  color: #293133; }
+  color: #293133;
+  color: #58464c; }
 
 .svg {
   background: none; }
@@ -3322,7 +3332,7 @@ body {
   left: -1px;
   right: -1px;
   z-index: -1;
-  fill: rgba(190, 189, 127, 0.3); }
+  fill: rgba(190, 189, 127, 0.2); }
 
 header {
   background: none; }
@@ -3378,46 +3388,71 @@ header {
     @media screen and (min-width: 40em) {
       #titleblock h1 {
         font-size: 5rem; } }
-  #titleblock h3 {
+  #titleblock .floating-textbox {
     margin-left: 24px;
     margin-top: -24px;
     margin-right: 24px; }
     @media screen and (min-width: 64em) {
-      #titleblock h3 {
+      #titleblock .floating-textbox {
         max-width: 600px;
         position: absolute;
         /* margin-left: 550px;*/
         /* margin-top: -100px;*/
         bottom: 24px;
         right: 24px; } }
-    #titleblock h3 span {
-      background: #89AC76;
+    #titleblock .floating-textbox svg {
+      position: absolute;
+      width: 124%;
+      top: -50%;
+      left: -25%;
+      fill: #6aa53a;
+      z-index: 0; }
+    #titleblock .floating-textbox h3 {
+      position: relative;
+      z-index: 10;
+      border-bottom: 20px solid #89AC76; }
+    #titleblock .floating-textbox span {
       /* background: $fun5;*/
+      font-family: 'anton';
       font-weight: 500;
       font-size: 1.6rem;
-      padding: 8px 12px;
       line-height: 2.6rem;
       box-decoration-break: clone;
       -webkit-box-decoration-break: clone;
       /* box-shadow: 0 10px 20px rgba(0,0,0,.2);*/ }
       @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-        #titleblock h3 span {
+        #titleblock .floating-textbox span {
           font-size: 1.2rem;
           line-height: 2rem; } }
       @media screen and (min-width: 90em) {
-        #titleblock h3 span {
+        #titleblock .floating-textbox span {
           font-size: 2rem;
           line-height: 2.1rem; } }
+      #titleblock .floating-textbox span span.question {
+        font-size: 12px;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        text-align: justify;
+        -webkit-hyphens: manual;
+        -webkit-shape-inside: polygon(0px 0px, 0 300px, 300px 300px); }
     @media screen and (max-aspect-ratio: 4 / 3) {
-      #titleblock h3 {
+      #titleblock .floating-textbox {
         bottom: 25%; } }
     @media screen and (orientation: portrait) {
-      #titleblock h3 {
+      #titleblock .floating-textbox {
         bottom: 35%; } }
 
 h1, h2 {
   font-family: 'Barrio', cursive;
-  color: #6A5D4D; }
+  color: #6A5D4D;
+  color: #5d283c;
+  color: #76686d; }
+
+h1 {
+  font-family: 'Anton';
+  font-weight: 700;
+  letter-spacing: .1rem; }
 
 .section {
   max-width: 75rem;
@@ -3623,6 +3658,8 @@ h1, h2 {
       /* border-radius:3px;*/
       /* width: 95%;*/
       background: #E6D690;
+      background: #ffa751;
+      color: #76686d;
       -webkit-transition: .2s all;
       transition: .2s all;
       font-size: 3vw;
@@ -3642,6 +3679,9 @@ h1, h2 {
             height: 48px; } }
   .top-nav-center li:first-child a, .top-nav-center li:nth-child(2) a, .top-nav-center li:last-child a {
     padding: 16px 6px; }
+
+.top-nav-center ul li > a {
+  color: #76686d; }
 
 #helpbar {
   margin: 0;
