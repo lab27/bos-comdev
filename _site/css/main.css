@@ -3415,13 +3415,14 @@ header {
     #titleblock .floating-textbox h3 {
       position: relative;
       z-index: 10;
-      border-bottom: 20px solid #89AC76; }
+      border-bottom: 20px solid #89AC76;
+      padding-bottom: 1.6rem; }
     #titleblock .floating-textbox span {
       /* background: $fun5;*/
       font-family: 'anton';
       font-weight: 500;
       font-size: 1.6rem;
-      line-height: 2.6rem;
+      line-height: 2.2rem;
       box-decoration-break: clone;
       -webkit-box-decoration-break: clone;
       /* box-shadow: 0 10px 20px rgba(0,0,0,.2);*/ }
@@ -3449,13 +3450,13 @@ header {
         bottom: 35%; } }
 
 h1, h2 {
-  font-family: 'Barrio', cursive;
+  font-family: 'Francois One', cursive;
   color: #6A5D4D;
   color: #5d283c;
   color: #76686d; }
 
 h1 {
-  font-family: 'Anton';
+  font-family: 'Francois One';
   font-weight: 700;
   letter-spacing: .1rem; }
 
@@ -3663,7 +3664,7 @@ h1 {
       /* border-radius:3px;*/
       /* width: 95%;*/
       background: #E6D690;
-      background: #ffa751;
+      background: #ffb770;
       color: #76686d;
       -webkit-transition: .2s all;
       transition: .2s all;
