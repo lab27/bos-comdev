@@ -3,6 +3,7 @@
 @import "settings";
 @import "foundation";
 @import "buttons";
+@import "timeline";
 
 /* @import "zig-zag";*/
 /* @import "piechart";*/
@@ -43,6 +44,29 @@ $almost-white: #fbf9f0;
     }
 }
 
+//Timeline
+dl {
+  padding-left: 2em;
+  margin-left: 1em;
+  border-left: 1px solid;
+  font-family: $system-font-family;
+
+  dt:before {
+    content: '-';
+    position: absolute;
+    margin-left: -2.05em;
+  }
+}
+
+svg.timeline-visualization {
+  font-size: .6rem;
+  circle {
+    fill: white;
+    stroke: black;
+    stroke-width: 2;
+  }
+}
+
 /* @import 'animate';*/
 .js-next {
     width: 60px;
@@ -66,7 +90,7 @@ $almost-white: #fbf9f0;
         color: $earthy7;
 
         // animation: none;
-   
+
     }
 }
 
@@ -174,7 +198,7 @@ $red-orange: #ff5035;
     }
 
 
-    img {
+    img.hero {
         margin-top: -48px;
     }
 
