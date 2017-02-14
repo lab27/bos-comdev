@@ -3684,6 +3684,9 @@ svg.timeline-visualization {
   .js-next:hover {
     color: #89AC76; }
 
+.space-bottom {
+  margin-bottom: 1em; }
+
 #font-name {
   position: fixed;
   top: 12px;
