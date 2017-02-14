@@ -1,7 +1,10 @@
 $main-button-color: $earthy7;
 
+// $main-button-color: $fun5;
+
 .bos-button {
     @include button-style;
+
     @include button-hollow;
 
     margin-bottom: 12px;
@@ -30,12 +33,15 @@ $main-button-color: $earthy7;
         width: 36px;
         height: 36px;
         vertical-align: middle;
+        margin-right: 12px;
     }
 
     &:hover {
         background: $main-button-color;
+
         // background: $earthy3;
         // border-color: $earthy3;
+   
     }
 
     &.info {
