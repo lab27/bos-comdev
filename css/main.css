@@ -3875,8 +3875,7 @@ h1 {
     clear: both; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .section {
-      padding: 12px 0;
-      margin-bottom: 24px; } }
+      padding: 12px 0; } }
   .section.dark {
     background: rgba(234, 230, 202, 0.5); }
 
