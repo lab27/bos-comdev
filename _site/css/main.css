@@ -477,17 +477,23 @@ Main components
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   background: #E1CC4F;
-  padding: 18px 14px;
+  padding: 8px 2px;
   font-weight: 700; }
+  @media screen and (min-width: 75em) {
+    .cd-timeline-img {
+      padding: 18px 14px; } }
   .cd-timeline-img.dot {
     width: 12px;
     height: 12px;
     background: white;
     padding: 0;
-    margin-left: -6px;
+    margin-left: 15px;
     border: none;
     box-shadow: none;
     margin-top: 24px; }
+    @media screen and (min-width: 75em) {
+      .cd-timeline-img.dot {
+        margin-left: -6px; } }
 
 .cd-timeline-img img {
   display: block;
@@ -3648,22 +3654,27 @@ table.hover tr:nth-of-type(even):hover {
     bottom: 36px; }
   100% {
     bottom: 24px; } }
-dl {
-  padding-left: 2em;
-  margin-left: 1em;
-  border-left: 1px solid;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
-  dl dt:before {
-    content: '-';
-    position: absolute;
-    margin-left: -2.05em; }
+.legend {
+  counter-reset: my-badass-counter; }
 
-svg.timeline-visualization {
-  font-size: .6rem; }
-  svg.timeline-visualization circle {
-    fill: white;
-    stroke: black;
-    stroke-width: 2; }
+.legend dt {
+  position: relative;
+  font: bold 16px;
+  padding: 4px 0 0 0; }
+
+.legend dt:before {
+  content: counter(my-badass-counter);
+  counter-increment: my-badass-counter;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: bold 2.5rem/1 -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+
+.legend dd {
+  margin: 0 0 3rem 0; }
+
+.legend dt, .legend dd {
+  padding-left: 3rem; }
 
 /* @import 'animate';*/
 .js-next {
@@ -4113,3 +4124,58 @@ h1 {
     display: block;
     margin-left: 2px;
     font-size: 50px; }
+
+svg#process .cls-1 {
+  fill: #a5e281; }
+svg#process .cls-2 {
+  fill: #ace183; }
+svg#process .cls-3 {
+  fill: #b3df84; }
+svg#process .cls-4 {
+  fill: #bbde86; }
+svg#process .cls-5 {
+  fill: #c2dd88; }
+svg#process .cls-6 {
+  fill: #c9db89; }
+svg#process .cls-7 {
+  fill: #d0da8b; }
+svg#process .cls-8 {
+  fill: #d8d98d; }
+svg#process .cls-9 {
+  fill: #dfd78e; }
+svg#process .cls-10 {
+  fill: #e6d690; }
+svg#process .cls-11 {
+  font-size: 16px; }
+svg#process .cls-11, svg#process .big-number {
+  fill: #76686d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+svg#process .cls-12, svg#process .cls-25 {
+  font-weight: 700; }
+svg#process .cls-13 {
+  letter-spacing: 0em; }
+svg#process .cls-14 {
+  letter-spacing: -0.01em; }
+svg#process .cls-15 {
+  letter-spacing: -0.01em; }
+svg#process .cls-16 {
+  font-family: SFUIDisplay-Regular, SF UI Display; }
+svg#process .cls-17 {
+  letter-spacing: -0.01em; }
+svg#process .cls-18 {
+  letter-spacing: -0.02em; }
+svg#process .cls-19 {
+  letter-spacing: -0.03em; }
+svg#process .cls-20 {
+  letter-spacing: 0em; }
+svg#process .cls-21 {
+  letter-spacing: 0em; }
+svg#process .cls-22 {
+  letter-spacing: -0.02em; }
+svg#process .cls-23 {
+  letter-spacing: -0.05em; }
+svg#process .cls-24 {
+  letter-spacing: -0.03em; }
+svg#process .big-number {
+  font-size: 48px;
+  font-weight: 700; }

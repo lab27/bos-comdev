@@ -113,19 +113,30 @@ Main components
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   background: $earthy3;
-  padding: 18px 14px;
+  padding: 8px 2px;
   font-weight: 700;
+
+  @include breakpoint(xlarge){
+      padding: 18px 14px;
+
+  }
 
   &.dot {
     width: 12px;
     height: 12px;
     background: white;
   padding: 0;
-  margin-left: -6px;
+  margin-left: 15px;
   border: none;
   box-shadow: none;
   margin-top: 24px;
+
+    @include breakpoint(xlarge) {
+        margin-left: -6px;
+    }
   }
+
+
 }
 .cd-timeline-img img {
   display: block;

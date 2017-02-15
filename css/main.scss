@@ -44,28 +44,37 @@ $almost-white: #fbf9f0;
     }
 }
 
-//Timeline
-dl {
-  padding-left: 2em;
-  margin-left: 1em;
-  border-left: 1px solid;
-  font-family: $system-font-family;
-
-  dt:before {
-    content: '-';
-    position: absolute;
-    margin-left: -2.05em;
-  }
-}
-
-svg.timeline-visualization {
-  font-size: .6rem;
-  circle {
-    fill: white;
-    stroke: black;
-    stroke-width: 2;
-  }
-}
+//process dl
+.legend {
+			counter-reset: my-badass-counter;
+		}
+		.legend dt {
+			position: relative;
+			font: bold 16px;
+			padding: 4px 0 0 0;
+		}
+		.legend dt:before {
+			content: counter(my-badass-counter);
+			counter-increment: my-badass-counter;
+			position: absolute;
+			left: 0;
+			top: 0;
+			font: bold 2.5rem/1 $system-font-family;
+		}
+		.legend dd {
+			margin: 0 0 3rem 0;
+		}
+		.legend dt, .legend dd {
+			padding-left: 3rem;
+		}
+// svg.timeline-visualization {
+//   font-size: .6rem;
+//   circle {
+//     fill: white;
+//     stroke: black;
+//     stroke-width: 2;
+//   }
+// }
 
 /* @import 'animate';*/
 .js-next {
@@ -624,4 +633,114 @@ h1 {
         margin-left: 2px;
         font-size: 50px;
     }
+}
+
+//Process svg
+svg#process {
+    .cls-1 {
+      fill: #a5e281;
+    }
+
+    .cls-2 {
+      fill: #ace183;
+    }
+
+    .cls-3 {
+      fill: #b3df84;
+    }
+
+    .cls-4 {
+      fill: #bbde86;
+    }
+
+    .cls-5 {
+      fill: #c2dd88;
+    }
+
+    .cls-6 {
+      fill: #c9db89;
+    }
+
+    .cls-7 {
+      fill: #d0da8b;
+    }
+
+    .cls-8 {
+      fill: #d8d98d;
+    }
+
+    .cls-9 {
+      fill: #dfd78e;
+    }
+
+    .cls-10 {
+      fill: #e6d690;
+    }
+
+    .cls-11 {
+      font-size: 16px;
+    }
+
+    .cls-11, .big-number {
+      fill: #76686d;
+      font-family: $system-font-family;
+    }
+
+    .cls-12, .cls-25 {
+      font-weight: 700;
+    }
+
+    .cls-13 {
+      letter-spacing: 0em;
+    }
+
+    .cls-14 {
+      letter-spacing: -0.01em;
+    }
+
+    .cls-15 {
+      letter-spacing: -0.01em;
+    }
+
+    .cls-16 {
+      font-family: SFUIDisplay-Regular, SF UI Display;
+    }
+
+    .cls-17 {
+      letter-spacing: -0.01em;
+    }
+
+    .cls-18 {
+      letter-spacing: -0.02em;
+    }
+
+    .cls-19 {
+      letter-spacing: -0.03em;
+    }
+
+    .cls-20 {
+      letter-spacing: 0em;
+    }
+
+    .cls-21 {
+      letter-spacing: 0em;
+    }
+
+    .cls-22 {
+      letter-spacing: -0.02em;
+    }
+
+    .cls-23 {
+      letter-spacing: -0.05em;
+    }
+
+    .cls-24 {
+      letter-spacing: -0.03em;
+    }
+
+    .big-number {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
 }
