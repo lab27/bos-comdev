@@ -44,6 +44,10 @@ $almost-white: #fbf9f0;
     }
 }
 
+.outlined {
+  border:6px solid #333;
+}
+
 //process dl
 .legend {
 			counter-reset: my-badass-counter;
@@ -210,11 +214,16 @@ $red-orange: #ff5035;
 
 
     img.hero {
-        margin-top: -48px;
+        margin-top: -36px;
+        margin-bottom: 48px;
+        @include breakpoint(medium) {
+          margin-top: -48px;
+          margin-bottom: 12px;
+        }
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 10vw;
         z-index: 10;
         position: relative;
 
