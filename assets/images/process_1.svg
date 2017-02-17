@@ -1,0 +1,53 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1202 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6d690;
+      }
+
+      .cls-2 {
+        fill: #c8db89;
+      }
+
+      .cls-3 {
+        fill: #a5e281;
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 24px;
+        fill: #76686d;
+      }
+
+      .cls-4 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+      }
+
+      .cls-5 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </defs>
+  <title>process_1</title>
+  <g>
+    <path class="cls-1" d="M739.63,143.05a394.12,394.12,0,0,0-504.44,222.2L386,321l53.66,117a177.48,177.48,0,0,1,295.91-41.66L865.2,408.49l36.26-151.56A395.82,395.82,0,0,0,739.63,143.05Z"/>
+    <path class="cls-2" d="M851.19,816.55a394.12,394.12,0,0,0,59.79-548L873.89,421.34l-128.14-12a177.48,177.48,0,0,1-111.87,277.1L558.52,792.57,671.65,899.75A395.82,395.82,0,0,0,851.19,816.55Z"/>
+    <path class="cls-3" d="M229.86,379.32A394.13,394.13,0,0,0,656.8,902.16L543.05,793.67l74.48-105a177.48,177.48,0,0,1-184-235.43L379.24,334.94Z"/>
+  </g>
+  <text class="cls-4" transform="translate(466 213.65)">Phase 1</text>
+  <text class="cls-4" transform="translate(787 556.65)">Phase 2</text>
+  <text class="cls-4" transform="translate(262 556.65)">Phase 3</text>
+  <text class="cls-5" transform="translate(465 242.72)">P<tspan class="cls-6" x="15" y="0">r</tspan><tspan x="23.48" y="0">ojektplanung &amp; </tspan><tspan x="0" y="28.8">Entwicklung</tspan></text>
+  <text class="cls-5" transform="translate(787 586.72)">Implementierung </text>
+  <text class="cls-5" transform="translate(262 586.72)">Abschluss &amp; <tspan x="0" y="28.8">E</tspan><tspan class="cls-7" x="13.76" y="28.8">v</tspan><tspan x="26.43" y="28.8">aluation</tspan></text>
+</svg>

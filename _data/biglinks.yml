@@ -11,7 +11,7 @@
 # - name: Über BOS
 #   icon: donate
 - name: Patenschaft
-  icon: hands
+  icon: hands-monkey
 - name: Spenden
   icon: donate
 - name: Shop
