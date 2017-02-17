@@ -1,3 +1,18 @@
 # bos-comdev
-### A UI prototyping quick starter based on Jekyll, Foundation 6 and Greensock
 
+## setup
+
+```
+npm install
+```
+
+## usage
+
+```gulp
+```
+
+## deploy
+
+```
+git subtree push --prefix _site gh-pages
+```
