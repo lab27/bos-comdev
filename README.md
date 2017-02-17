@@ -8,7 +8,8 @@ npm install
 
 ## usage
 
-```gulp
+```
+gulp
 ```
 
 ## deploy
