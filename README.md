@@ -2,7 +2,12 @@
 
 ## setup
 
+node version: 6.9.1
+
 ```
+npm install -g gulp-cli
+npm install -g pug
+bundle
 npm install
 ```
 
