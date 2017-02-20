@@ -22,7 +22,8 @@ title: BOS-Schweiz
     .graphic
       h4.text-center Verortung der Projekte
       img(src="assets/images/indonesia.svg")
-      img.outlined(src="assets/images/east_kalimantan.svg")
+      img.outlined-black(src="assets/images/east_kalimantan.svg")
+      img.outlined-red.space-left(src="assets/images/central_kalimantan.svg",style="width:50%;float:right;")
 
     p.lead Unsere Projekte in Zentralkalimantan konzentrieren sich auf die Mawas Region, ein 3‘774 km2 grosses und geschütztes Waldgebiet. Am Rande des Schutzgebietes leben rund 29‘000 Haushalte in 53 Dörfern, die teils schwer zugänglich und vergleichsweise arm sind - ein fruchtbarer Boden für illegale Aktivitäten wie Brandrodung, Wilderei, Holzeinschlag oder das Schürfen von Gold. Lokale „Kredithaie“, die Geld zu überteuerten Konditionen verleihen, kommen hier genauso auf ihre Kosten, wie Ölpalmplantagen. Land wird ihnen oft billig angeboten und günstige Arbeitskräfte stehen ausreichend zur Verfügung.
     
@@ -36,7 +37,7 @@ title: BOS-Schweiz
 
     p.lead Drei Dorfgemeinschaften zwischen der Bezirksstadt Muara Wahau und dem Auswilderungsgebiet der BOS Stiftung (BOSF) arbeiten gemeinsam mit dem Feldteam von BOSF/RHOI und einer beratenden indonesischen Nichtregierungsorganisation (LPMK) an der Verbesserung traditioneller und der Schaffung neuer, nachhaltiger Einkommensquellen, einer besseren medizinischen Versorgung, der Erweiterung der Schulbildung und der Sensibilisierung für den Natur- und Orang-Utan-Schutz. Speziell Frauen soll mithilfe von Kleinkrediten zu mehr Einfluss in den Gemeinschaften, Eigenständigkeit und Selbstvertrauen verholfen werden. 
     .graphic
-      img(src="assets/images/frau-wasser.jpg")
+      img(src="assets/images/bathing.jpg")
       
     p.lead Eine Transitstation innerhalb der Grenze von Kehje Sewen unterstützen wir bei der Verbesserung ihrer Frischwasserversorgung, der Sanierung und Renovierung sanitärer Einrichtungen, der Einführung eines Abfallentsorgungs- bzw. Mülltrennungssystems und dem Aufbau eines gemeinschaftlichen Gemüsegartens mit Baumschule. 
 
@@ -51,7 +52,7 @@ title: BOS-Schweiz
   .section-content
     p.lead Mit Mikrokrediten finanzieren wir die Herstellung, Veredelung und Vermarktung von Gütern, die entweder auf herkömmlichen Produktionsmethoden beruhen (wie z.B. traditionelle Fischfangmethoden, die ansässige Rattan- oder Kautschukproduktion) oder Initiativen, die neue Einkommensmöglichkeiten bieten (z.B. die Eröffnung von kleinen Kiosken oder Copy Shops).
     .graphic
-      img(src="assets/images/shop.jpg")
+      img(src="assets/images/kiosk-baskets.jpg")
     p.lead Traditionelle Kunsthandwerks- und Anbaumethoden sollen so erhalten und neue Kompetenzen erworben werden, die es der lokalen Bevölkerung erlauben, für sich und ihre Familien ein sicheres und umweltverträgliches Einkommen zu generieren.
     p.lead Marginalisierte indigene Gruppen, die dem Regenwald häufig viel Wertschätzung entgegen bringen, werden in ihrer Identität, ihrer Selbstbestimmung und in der Wahrnehmung ihrer Rechte gestärkt. Zudem unterstützen wir auch hier gezielt Frauen, um ihre Stellung in der Gesellschaft zu stärken. Organisiert wird das Mikrokreditsystem von den Kreditnehmenden selbst.
 
@@ -108,17 +109,14 @@ title: BOS-Schweiz
       button.bos-button.space-left
         {% include svg_icon.html name="aktiv" %}
         span werde aktiv
-.svg.light
-  {% include leaves.svg id="" %}
 
-.section.light
   .section-title
     h2 Bildungsprojekte
   .section-content
     p.lead Unsere Bildungsprojekte können zwei Kategorien zugeteilt werden: 1.) Massnahmen in den Bereichen Umwelt-, Natur- und Artenschutz (z.B. Workshops zur Sensibilisierung der lokalen Bevölkerung für die ökologische Bedeutung der Orang-Utans oder für eine nachhaltige, ökonomische Nutzung des Regenwaldes) und 2.) Weiterbildungsprogramme zur Verbesserung der Einkommenssituation. 
 
     .graphic
-      img(src="assets/images/posters.jpg")
+      img(src="assets/images/school-blackboard.jpg")
     
     a(href="bildungsprojekte.html")
       button.bos-button.large.info.float-right.space-left mehr erfahren &raquo;
@@ -145,9 +143,7 @@ title: BOS-Schweiz
       h4.text-center Projektzyklus
       img(src="assets/images/process_1.svg")
 
-.section.dark
-  .section-content
-    dl.legend.show-for-small-only
+    dl.legend
       h5.text-center Legende
 
       dt Projektplanung & Entwicklung
@@ -161,10 +157,15 @@ title: BOS-Schweiz
 
     p.lead Vor Ort und in der Schweiz arbeiten wir eng mit Partnern zusammen, die über jahrelange Erfahrung und Expertise in der Entwicklungszusammenarbeit in Indonesien verfügen. BOS Mitarbeiter werden vor Ort geschult und haben – genau wie wir von BOS Schweiz – über die Jahre wichtige Kompetenzen in den Bereichen Projektplanung, Umsetzung und Evaluation erworben.
     .graphic
-      img(src="assets/images/schule.jpg")
+      img(src="assets/images/school-group.jpg")
     p.lead Die notwendigen Kapazitäten und personellen Ressourcen sind aufgebaut, etablierte Abläufe in der Projektabwicklung formalisiert und gemeinsame Lernprozesse längst zur Grundlage zukünftiger Vorhaben geworden. Einer Ausweitung unserer Entwicklungszusammenarbeit steht somit nichts im Wege!
     .graphic
-      h4.text-center Zeitstrahl Entwicklung Com Dev Aktivitäten
+    h4.text-center Zeitstrahl Entwicklung Com Dev Aktivitäten
+    .row.clearfix.show-for-large-up
+      .large-6.columns
+        h5.timeline-location Zentralkalimantan
+      .large-6.columns
+        h5.timeline-location Ostkalimantan
 
   .section-content#cd-timeline.dark.clearfix
     {% for year in site.data.dates %}
@@ -176,15 +177,18 @@ title: BOS-Schweiz
       {% for event in year.events %}
       .cd-timeline-block
         .cd-timeline-img.dot
-        .cd-timeline-content
+        .cd-timeline-content.{{event.location | downcase}}
+          p.hide-for-large.location {{event.location}}
           p {{ event.event }}
       {% endfor %}
     {% endfor %}
-      a(href="#")
-        button.bos-button.info.float-center share
 
 
   .section-content
+    .action-buttons.text-center.clearfix
+      a(href="#")
+      button.bos-button.info.float-center.space-bottom share
+    
     p.lead Unsere Entwicklungszusammenarbeit vor Ort finanzieren wir über Stiftungs- und Spendengelder. Über die Jahre haben wir nicht nur erhebliche Summen für Vorhaben in diesem Bereich eingeworben, sondern auch unseren vertrauenswürdigen Umgang mit den Mitteln bewiesen. Bitte spenden auch Sie oder werden Sie anderweitig aktiv!
     .action-buttons.text-center.clearfix
       button.bos-button
