@@ -4,9 +4,12 @@
 
 node version: 6.9.1
 
+For nvm that's `nvm install v6.9.1`.
+
 ```
-npm install -g gulp-cli
-npm install -g pug
+npm install gulp-cli -g
+npm install pug -g
+npm install pug-cli -g
 bundle
 npm install
 ```
