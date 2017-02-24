@@ -3837,7 +3837,9 @@ header {
       position: relative;
       z-index: 10;
       border-bottom: 20px solid #89AC76;
-      padding-bottom: 1.6rem; }
+      padding-bottom: 1.6rem;
+      background: rgba(137, 172, 118, 0.3);
+      padding: 1rem; }
     #titleblock .floating-textbox span {
       /* background: $fun5;*/
       font-family: 'anton';
