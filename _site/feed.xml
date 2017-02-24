@@ -8,8 +8,9 @@
     <atom:link href="https://lab27.github.io/bos-comdev/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Fri, 24 Feb 2017 09:32:03 +0100</pubDate>
     <lastBuildDate>Fri, 24 Feb 2017 09:32:03 +0100</lastBuildDate>
+
     <generator>Jekyll v3.1.2</generator>
-    
+
       <item>
         <title>Lorem ipsum</title>
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
@@ -23,9 +24,9 @@
         <pubDate>Wed, 23 Dec 2015 00:00:00 +0100</pubDate>
         <link>https://lab27.github.io/bos-comdev/2015/12/23/lorem-ipsum.html</link>
         <guid isPermaLink="true">https://lab27.github.io/bos-comdev/2015/12/23/lorem-ipsum.html</guid>
-        
-        
+
+
       </item>
-    
+
   </channel>
 </rss>
