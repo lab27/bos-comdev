@@ -1,67 +1,80 @@
-#helpbar.row.expanded.clearfix(style="visibility:hidden;opacity:0;")
-  #helptext.row.expanded
-    .menu-col
-      ul.menu.vertical
-        li.cat Aktuell
-        li Neue Babyhäuser
-        li Neues Zuhause für Malaienbären
-        li Kein Regenwald auf meinem Teller
-        li Nachrichten
-        li Das sagen Sie über BOS
-    .menu-col
-      ul.menu.vertical
-        li.cat Projekte
-        li Bauprojekte
-        li Salat Island
-        li Wiederaufforstung
-        li Kampagnen
-        li Auswilderung
-        li Regenwald
-        li BOS-Rettungsstationen
-    .menu-col
-      ul.menu.vertical
-        li.cat Orang-Utan
-        li Wissenswertes
-        li Auswilderung
-        li Orang-Utans in Gefahr
-        li Plüschis ab in die Freiheit
-    .menu-col
-      ul.menu.vertical
-        li.cat Aktiv Werden
-        li Hilfpakete schnüren
-        li Bäume pflanzen in Samboja
-        li Herzensangelegenheit
-        li Orang-Utan-Patenschaft
-        li Fördermitglied
-        li Spenden
-        li Testamentspenden
-        li Shop
-        li Volontariat Vorort
-        li Petitionen
-        li Freiwilligenarbeit
-        li Das sagen Sie über BOS
-        li Plüschis ab in die Freiheit
-    .menu-col
-      ul.menu.vertical
-        li.cat Mediathek
-        li Zum Lesen
-        li Für Ihre Ohren 
-        li Für Ihre Augen
-        li In den Medien
-        li Für die Medien
-        li Nachrichtenarchiv
-    .menu-col
-      ul.menu.vertical
-        li.cat Über BOS
-        li Überblick und Vereinszweck
-        li Unser Vorstand
-        li Unser Team in der Geschäftsstelle
-        li BOS Freunde
-        li BOS Stiftung (BOSF)
-        li Die BOS Familie weltweit
-        li Die BOS Familie weltweit
-        li Samboja Lodge
-        li Kontakt/Impressum
-        li Das sagen Sie über BOS
-  button#close-help
-    span ×
+<div class="row expanded clearfix" id="helpbar" style="visibility:hidden;opacity:0">
+  <div class="row expanded" id="helptext">
+    <div class="menu-col">
+      <ul class="menu vertical">
+        <li class="cat">Aktuell</li>
+        <li>Neue Babyhäuser</li>
+        <li>Neues Zuhause für Malaienbären</li>
+        <li>Kein Regenwald auf meinem Teller</li>
+        <li>Nachrichten</li>
+        <li>Das sagen Sie über BOS</li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <ul class="menu vertical">
+        <li class="cat">Projekte</li>
+        <li>Bauprojekte</li>
+        <li>Salat Island</li>
+        <li>Wiederaufforstung</li>
+        <li>Kampagnen</li>
+        <li>Auswilderung</li>
+        <li>Regenwald</li>
+        <li>BOS-Rettungsstationen</li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <ul class="menu vertical">
+        <li class="cat">Orang-Utan</li>
+        <li>Wissenswertes</li>
+        <li>Auswilderung</li>
+        <li>Orang-Utans in Gefahr</li>
+        <li>Plüschis ab in die Freiheit</li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <ul class="menu vertical">
+        <li class="cat">Aktiv Werden</li>
+        <li>Hilfpakete schnüren</li>
+        <li>Bäume pflanzen in Samboja</li>
+        <li>Herzensangelegenheit</li>
+        <li>Orang-Utan-Patenschaft</li>
+        <li>Fördermitglied</li>
+        <li>Spenden</li>
+        <li>Testamentspenden</li>
+        <li>Shop</li>
+        <li>Volontariat Vorort</li>
+        <li>Petitionen</li>
+        <li>Freiwilligenarbeit</li>
+        <li>Das sagen Sie über BOS</li>
+        <li>Plüschis ab in die Freiheit</li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <ul class="menu vertical">
+        <li class="cat">Mediathek</li>
+        <li>Zum Lesen</li>
+        <li>Für Ihre Ohren </li>
+        <li>Für Ihre Augen</li>
+        <li>In den Medien</li>
+        <li>Für die Medien</li>
+        <li>Nachrichtenarchiv</li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <ul class="menu vertical">
+        <li class="cat">Über BOS</li>
+        <li>Überblick und Vereinszweck</li>
+        <li>Unser Vorstand</li>
+        <li>Unser Team in der Geschäftsstelle</li>
+        <li>BOS Freunde</li>
+        <li>BOS Stiftung (BOSF)</li>
+        <li>Die BOS Familie weltweit</li>
+        <li>Die BOS Familie weltweit</li>
+        <li>Samboja Lodge</li>
+        <li>Kontakt/Impressum</li>
+        <li>Das sagen Sie über BOS</li>
+      </ul>
+    </div>
+  </div>
+  <button id="close-help"><span>×</span></button>
+</div>
